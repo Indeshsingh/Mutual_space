@@ -23,19 +23,21 @@ class _BottomnavbarScreenstate extends State<BottomnavbarScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
+        backgroundColor: Color(0xffF1F2F6),
         items: [
           BottomNavigationBarItem(
-              icon: Icon(Icons.swap_vert_circle_sharp), label: "Space"),
+              icon: Image.asset("assets/img/Vector (2).png"), label: "Space"),
           BottomNavigationBarItem(
-              icon: Icon(Icons.bubble_chart_sharp), label: "Message"),
+              icon: Image.asset("assets/img/Vector (1).png"), label: "Message"),
           BottomNavigationBarItem(
-              icon: Icon(Icons.notifications), label: "Notification"),
+              icon: Image.asset("assets/img/Vector (3).png"),
+              label: "Notification"),
           BottomNavigationBarItem(
-              icon: Icon(Icons.more_horiz), label: "Profile"),
+              icon: Image.asset("assets/img/Ellipse 1.png"), label: "Profile"),
         ],
         // backgroundColor: Color(0xFFFFFFE5),
-        // selectedItemColor: Color(0xFF3D3849),
-        // unselectedItemColor: Colors.grey,
+        selectedItemColor: Color(0xFF9135F2),
+        unselectedItemColor: Color(0xff544262),
         type: BottomNavigationBarType.fixed,
         currentIndex: currentindex,
         onTap: (value) {

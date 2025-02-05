@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../space_tab/community_tab.dart';
+import '../space_tab/community_card.dart';
 import '../space_tab/community_tab_screen.dart';
 
 class SpaceScreen extends StatefulWidget {
