@@ -3,6 +3,9 @@ import 'package:google_fonts/google_fonts.dart';
 
 class CommunityCard extends StatelessWidget {
   final bool? show;
+  final String image;
+  final String? midTotal;
+
   final String title;
   final String? totalCount;
   final String hereCount;
@@ -20,6 +23,8 @@ class CommunityCard extends StatelessWidget {
     this.data = false,
     this.totalcount = false,
     this.onTap,
+    required this.image,
+    this.midTotal,
   });
 
   @override
@@ -36,9 +41,7 @@ class CommunityCard extends StatelessWidget {
             children: [
               CircleAvatar(
                 radius: 27,
-                backgroundImage: AssetImage(
-                  "assets/img/image.png",
-                ),
+                backgroundImage: AssetImage(image),
               ),
               SizedBox(
                 width: 15,
@@ -193,9 +196,9 @@ class CommunityCard extends StatelessWidget {
                             shape: BoxShape.circle,
                           ),
                           child: Padding(
-                            padding: const EdgeInsets.all(7),
+                            padding: EdgeInsets.all(7),
                             child: Text(
-                              "2",
+                              midTotal.toString(),
                               style: GoogleFonts.inter(
                                   fontSize: 13,
                                   fontWeight: FontWeight.w600,

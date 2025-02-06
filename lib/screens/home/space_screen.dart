@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-import '../space_tab/community_card.dart';
 import '../space_tab/community_tab_screen.dart';
 
 class SpaceScreen extends StatefulWidget {
@@ -62,7 +61,7 @@ class _SpaceScreenState extends State<SpaceScreen>
                   ),
                 ),
               ),
-              const SizedBox(height: 10),
+              const SizedBox(height: 15),
               Container(
                 height: 36,
                 decoration: BoxDecoration(
@@ -74,9 +73,7 @@ class _SpaceScreenState extends State<SpaceScreen>
                   isScrollable: false,
                   dividerColor: Colors.transparent,
                   indicatorSize: TabBarIndicatorSize.tab,
-                  // indicatorPadding: EdgeInsets.symmetric(vertical: 0),
-                  // indicatorSize: TabBarIndicatorSize.label,
-                  // indicatorWeight: 2,
+
                   labelPadding: EdgeInsets.only(
                     left: 5,
                   ), // Remove extra padding

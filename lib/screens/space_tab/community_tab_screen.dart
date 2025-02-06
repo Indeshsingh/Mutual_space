@@ -21,9 +21,13 @@ class CummunityTabScreen extends StatelessWidget {
             hereCount: "543",
             totalCount: "253",
             totalcount: true,
+            image: "assets/img/image.png",
             onTap: () {
               Navigator.of(context).push(MaterialPageRoute(
-                  builder: (context) => CommunityDetailsScreen()));
+                  builder: (context) => CommunityDetailsScreen(
+                        title: "Consumer Technology",
+                        image: "assets/img/image.png",
+                      )));
             },
           ),
           Divider(),
@@ -34,6 +38,14 @@ class CummunityTabScreen extends StatelessWidget {
             hereCount: "543",
             totalCount: "39",
             totalcount: true,
+            image: "assets/img/image (2).png",
+            onTap: () {
+              Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => CommunityDetailsScreen(
+                        title: "SaaS & Enterprise",
+                        image: "assets/img/image (2).png",
+                      )));
+            },
           ),
           Divider(),
           CommunityCard(
@@ -44,16 +56,34 @@ class CummunityTabScreen extends StatelessWidget {
             // totalCount: "39",
             show: true,
             data: true,
+            image: "assets/img/image (1).png",
+            midTotal: "2",
+            onTap: () {
+              Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => CommunityDetailsScreen(
+                        title: "Travel & Vacation",
+                        image: "assets/img/image (1).png",
+                      )));
+            },
           ),
           Divider(),
           CommunityCard(
-            // show: true,
             time: "9:23 AM",
             title: "Law & Legal",
             hereCount: "543",
-            // totalCount: "39",
+            // totalCount: "57",
+            // totalcount: true,
+            image: "assets/img/image (3).png",
+            midTotal: "57",
             show: true,
             data: true,
+            onTap: () {
+              Navigator.of(context).push(MaterialPageRoute(
+                  builder: (context) => CommunityDetailsScreen(
+                        title: "Law & Legal",
+                        image: "assets/img/image (3).png",
+                      )));
+            },
           ),
           SizedBox(
             height: 20,
@@ -77,7 +107,10 @@ class CummunityTabScreen extends StatelessWidget {
                       color: Color(0xff0F0123),
                     ),
                   ),
-                  Icon(CupertinoIcons.arrow_down_right),
+                  SizedBox(
+                    width: 10,
+                  ),
+                  Image.asset("assets/img/Vector (4).png"),
                 ],
               ),
             ),
