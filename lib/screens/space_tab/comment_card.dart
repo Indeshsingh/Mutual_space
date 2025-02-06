@@ -33,9 +33,7 @@ class Commentcard extends StatelessWidget {
           children: [
             CircleAvatar(
               radius: 28,
-              backgroundImage: AssetImage(image
-                  // "assets/img/cmt.png"
-                  ),
+              backgroundImage: AssetImage(image),
             ),
             km != false
                 ? Positioned(

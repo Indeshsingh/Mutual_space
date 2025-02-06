@@ -66,63 +66,47 @@ class CommunityCard extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.start,
                     // mainAxisSize: MainAxisSize.min,
                     children: [
-                      Container(
-                        // color: Colors.yellow,
-                        child: Row(
-                          // mainAxisAlignment: MainAxisAlignment.start,
-                          // crossAxisAlignment: CrossAxisAlignment.start,
-                          children: [
-                            Stack(
-                              children: [
-                                // Container(
-                                //     color: Colors.red,
-                                //     width: 80,
-                                //     height: 30,
-                                //     child: Positioned(
-                                //       left: 0,
-                                //       child: Image.asset(
-                                //         "assets/img/Ellipse 76.png",
-                                //       ),
-                                //     )),
-                                Container(
-                                  width: 80,
-                                  height: 20,
-                                  // color: Colors.red,
-                                  child: Image.asset(
-                                    "assets/img/Ellipse 76.png",
+                      Row(
+                        children: [
+                          Stack(
+                            children: [
+                              SizedBox(
+                                width: 80,
+                                height: 20,
+                                // color: Colors.red,
+                                child: Image.asset(
+                                  "assets/img/Ellipse 76.png",
+                                  width: 25,
+                                ),
+                              ),
+                              Positioned(
+                                top: 1,
+                                right: 41,
+                                child: SizedBox(
                                     width: 25,
-                                  ),
-                                ),
-
-                                Positioned(
-                                  top: 2,
-                                  right: 41,
-                                  child: Container(
-                                      width: 25,
-                                      child: Image.asset(
-                                        "assets/img/Ellipse 77.png",
-                                      )),
-                                ),
-                                Positioned(
-                                  top: 2,
-                                  right: 55,
-                                  child: Container(
-                                      width: 25,
-                                      child: Image.asset(
-                                        "assets/img/Ellipse 78.png",
-                                      )),
-                                )
-                              ],
-                            ),
-                            Text(
-                              "$hereCount+ here...",
-                              style: GoogleFonts.inter(
-                                  fontSize: 14,
-                                  fontWeight: FontWeight.w400,
-                                  color: Color(0xff4F4F4F)),
-                            ),
-                          ],
-                        ),
+                                    child: Image.asset(
+                                      "assets/img/Ellipse 77.png",
+                                    )),
+                              ),
+                              Positioned(
+                                top: 1,
+                                right: 55,
+                                child: SizedBox(
+                                    width: 25,
+                                    child: Image.asset(
+                                      "assets/img/Ellipse 78.png",
+                                    )),
+                              )
+                            ],
+                          ),
+                          Text(
+                            "$hereCount+ here...",
+                            style: GoogleFonts.inter(
+                                fontSize: 14,
+                                fontWeight: FontWeight.w400,
+                                color: Color(0xff4F4F4F)),
+                          ),
+                        ],
                       ),
                       // Spacer(),
                     ],

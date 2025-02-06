@@ -41,7 +41,7 @@ class ZeroDotZeroTab extends StatelessWidget {
           ),
           Commentcard(
             image: "assets/img/Group 11 (1).png",
-            title: "Amit Raidu",
+            title: "Amit Raidu ",
             short_discription:
                 "Solo-preneur passionate about social impact and technology",
             description:
