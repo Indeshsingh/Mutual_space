@@ -46,6 +46,7 @@ class _SpaceScreenState extends State<SpaceScreen>
               ),
               const SizedBox(height: 10),
               Container(
+                padding: EdgeInsets.all(8.0),
                 height: 36,
                 width: MediaQuery.of(context).size.width,
                 decoration: BoxDecoration(

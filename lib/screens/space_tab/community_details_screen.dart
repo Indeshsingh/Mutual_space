@@ -95,7 +95,13 @@ class _CommunityDetailsScreenState extends State<CommunityDetailsScreen>
               ),
             ],
           ),
-          actions: [Icon(Icons.menu)],
+          actions: [
+            Icon(
+              Icons.more_vert_outlined,
+              size: 33,
+              color: Color(0xff000000),
+            )
+          ],
           bottom: PreferredSize(
             preferredSize: const Size.fromHeight(50),
             child: Container(
